@@ -1,0 +1,1 @@
+import{_ as a,c as s,a as o,t as r,P as t,o as c}from"./entry.ejuXkGdV.js";const l={};function n(e,_){return c(),s("div",null,[o("h1",null,"Article - "+r((e._.provides[t]||e.$route).params.slug),1)])}const i=a(l,[["render",n]]);export{i as default};
