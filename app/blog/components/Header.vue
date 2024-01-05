@@ -1,7 +1,7 @@
 <template>
   <div class="relative mt-4 flex gap-4">
     <div class="flex flex-1"></div>
-    <div class="flex flex-1 justify-end md:justify-center">
+    <div class="flex flex-1 justify-center">
       <nav class="pointer-events-auto">
         <ul
           class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
