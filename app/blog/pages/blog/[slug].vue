@@ -12,12 +12,13 @@ article {
     @apply pb-3 pt-6 text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100;
   }
 
-  h2, h2 > a{
+  h2,
+  h2 > a {
     @apply pb-3 pt-6 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100;
   }
 
   p {
-    @apply my-7 text-base text-zinc-600 dark:text-zinc-400;
+    @apply my-6 text-base text-zinc-600 dark:text-zinc-400;
   }
 
   ol {
@@ -25,19 +26,23 @@ article {
   }
 
   li {
-    @apply my-2
+    @apply my-2;
   }
 
   strong {
     @apply text-zinc-800 dark:text-zinc-100;
   }
 
-  pre {
-    @apply my-3 block overflow-x-scroll whitespace-pre rounded-lg border border-zinc-300 bg-zinc-100 p-3 dark:bg-black;
+  code {
+    @apply rounded-md border border-zinc-300 bg-zinc-100 p-1 text-xs dark:border-zinc-700 dark:bg-zinc-900;
+  }
+
+  pre > code {
+    @apply my-3 block overflow-x-scroll whitespace-pre p-3 text-sm;
   }
 
   a {
-    @apply text-teal-500 dark:text-teal-400
+    @apply text-teal-500 dark:text-teal-400;
   }
 }
 </style>

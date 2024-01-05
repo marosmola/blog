@@ -1,13 +1,13 @@
 <template>
   <div class="mx-auto mt-12 max-w-2xl px-6">
-    <h2 class="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
+    <h2
+      class="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
       Writing on software design, software development and software
       architecture.
     </h2>
-    <p class="mt-2 text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-      Here, you can explore my in-depth insights on programming, leadership,
-      product design, and various other topics. These thoughts are organized
-      chronologically for your convenience.
+    <p class="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+      Here, you can explore my insights on programming, software development,
+      software architecture, and various other topics.
     </p>
 
     <!-- <pre>{{ data }}</pre> -->
@@ -25,7 +25,7 @@
         </div>
         <div class="group relative">
           <h3
-            class="mt-2 text-lg font-semibold leading-6 text-zinc-800 group-hover:text-gray-600 dark:text-zinc-100">
+            class="mt-2 text-lg font-semibold leading-6 text-zinc-800 group-hover:text-teal-400 dark:text-zinc-100">
             <nuxt-link :to="post._path">
               <span class="absolute inset-0" />
               {{ post.title }}
@@ -42,8 +42,19 @@
 </template>
 
 <script setup>
-const data = await queryContent('blog')
-  .only(['_id', 'title', '_path', 'date', 'description'])
+useHead({
+  title: "marosmola.com - Blog",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Writing on software design, software development and software architecture.",
+    },
+  ],
+})
+
+const data = await queryContent("blog")
+  .only(["_id", "title", "_path", "date", "description"])
   .where({ draft: { $ne: true } })
   .sort({ date: -1 })
   .find()
