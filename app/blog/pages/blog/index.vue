@@ -25,7 +25,7 @@
         </div>
         <div class="group relative">
           <h3
-            class="mt-2 text-lg font-semibold leading-6 text-zinc-800 group-hover:text-teal-400 dark:text-zinc-100">
+            class="mt-2 text-lg font-semibold leading-6 text-zinc-800 group-hover:text-teal-dark dark:text-zinc-100">
             <nuxt-link :to="post._path">
               <span class="absolute inset-0" />
               {{ post.title }}

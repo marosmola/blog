@@ -9,11 +9,13 @@ export default {
     "./error.vue",
   ],
   theme: {
-    // fontFamily: {
-    //   'sans': ['ui-sans-serif', 'system-ui']
-    // },
-    extend: {},
+    extend: {
+      colors: {
+        "teal-light": "#32E0E4",
+        "teal-dark": "#09B0BA"
+      },
+    }
   },
-  darkMode: 'class',
+  darkMode: "class",
   plugins: [],
 }

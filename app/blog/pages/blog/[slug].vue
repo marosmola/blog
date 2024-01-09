@@ -38,11 +38,11 @@ article {
   }
 
   pre > code {
-    @apply my-3 block overflow-x-scroll whitespace-pre p-3 text-sm;
+    @apply my-3 block overflow-x-auto whitespace-pre p-3 text-sm;
   }
 
   a {
-    @apply text-teal-500 dark:text-teal-400;
+    @apply text-teal-dark dark:text-teal-dark;
   }
 }
 </style>
