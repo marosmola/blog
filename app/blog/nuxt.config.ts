@@ -1,13 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  runtimeConfig: {
-    public: {
-      gtm: {
-        id: process.env.GTM_ID
-      }
-    }
-  },
   // ssr: false,
   css: [
     '~/assets/css/main.css',
@@ -16,6 +9,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@zadigetvoltaire/nuxt-gtm',
   ],
+  gtm: {
+    id: 'GTM-QWYM55077J'
+  },
   content: {
     highlight: {
       theme: {
