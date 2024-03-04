@@ -39,7 +39,7 @@
         </a>
       </div>
       <p class="mt-10 text-center text-xs leading-5 text-gray-500">
-        &copy; 2020 marosmola.com
+        &copy; {{ new Date().getFullYear() }} marosmola.com
       </p>
     </div>
   </footer>

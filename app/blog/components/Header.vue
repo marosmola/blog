@@ -15,6 +15,7 @@
             <nuxt-link
               class="relative block px-3 py-2 transition hover:text-teal-dark dark:hover:text-teal-dark"
               :to="el.href"
+              @click="triggerEvent(el.href)"
               active-class="text-teal-dark">
               {{ el.name }}
               <span
@@ -61,6 +62,7 @@
 
 <script setup lang="ts">
 const route = useRoute()
+const gtm = useGtm()
 
 const navigation = [
   { name: "About", href: "/" },
@@ -78,5 +80,9 @@ function switchMode() {
   } else {
     document.documentElement.classList.remove("dark")
   }
+}
+
+function triggerEvent(href: string) {
+  gtm.trackView(href)
 }
 </script>
