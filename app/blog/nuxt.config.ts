@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@zadigetvoltaire/nuxt-gtm',
   ],
   gtm: {
-    id: 'GTM-QWYM55077J'
+    id: 'GTM-WZLPW43M'
   },
   content: {
     highlight: {
